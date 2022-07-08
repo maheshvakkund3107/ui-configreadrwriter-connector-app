@@ -19,7 +19,7 @@ export class ConfigReaderWriterComponent implements OnInit {
   }
   
 
-  public registerNow(){
+  public configureNow(){
 let resp=this.service.doConfiguration(this.user);
 resp.subscribe((data)=>this.message=data);
   }

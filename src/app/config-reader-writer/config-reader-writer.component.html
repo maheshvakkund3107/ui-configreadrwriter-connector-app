@@ -11,12 +11,10 @@
         <div class="col-md-6">
             <form>
                 <fieldset>
-                    <legend class="text-center">Valid information is required to register. <span class="req"><small>
-                                required *</small></span></legend>
+                    <legend class="text-center">Configuration information is required. </legend>
 
                     <div class="form-group">
-                        <label for="reader"><span class="req">* </span> Reader: <small>This will be your login user
-                                name</small> </label>
+                        <label for="reader"><span class="req">* </span> Reader: </label>
                         <input required type="text" [(ngModel)]="user.configReader" name="reader" id="reader"
                             class="form-control phone" maxlength="28" placeholder="Enter valid Reader" />
                     </div>
@@ -29,7 +27,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Configure" (click)="configureNow()">
                     </div>
                 </fieldset>
             </form><!-- ends register form -->
