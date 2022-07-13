@@ -10,7 +10,7 @@ import { ConfigReaderWriterService } from '../config-reader-writer.service';
 export class ConfigReaderWriterComponent implements OnInit {
 
 
-  user: ConfigReaderWriterModel=new ConfigReaderWriterModel("","");
+  config: ConfigReaderWriterModel=new ConfigReaderWriterModel("","");
   message:any;
 
   constructor(private service:ConfigReaderWriterService) { }
@@ -20,7 +20,7 @@ export class ConfigReaderWriterComponent implements OnInit {
   
 
   public configureNow(){
-let resp=this.service.doConfiguration(this.user);
+let resp=this.service.doConfiguration(this.config);
 resp.subscribe((data)=>this.message=data);
   }
 

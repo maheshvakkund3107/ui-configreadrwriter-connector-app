@@ -15,13 +15,13 @@
 
                     <div class="form-group">
                         <label for="reader"><span class="req">* </span> Reader: </label>
-                        <input required type="text" [(ngModel)]="user.configReader" name="reader" id="reader"
+                        <input required type="text" [(ngModel)]="config.configReader" name="reader" id="reader"
                             class="form-control phone" maxlength="28" placeholder="Enter valid Reader" />
                     </div>
 
                     <div class="form-group">
                         <label for="writer"><span class="req">* </span> Writer: </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.configWriter" name="writer" id="writer" required
+                        <input class="form-control" type="text" [(ngModel)]="config.configWriter" name="writer" id="writer" required
                             placeholder="Enter valid Writer" />
                         <div id="errFirst"></div>
                     </div>
